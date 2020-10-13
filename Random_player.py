@@ -1,13 +1,13 @@
 #
 # ps9pr3.py  (Problem Set 9, Problem 3)
 #
-# Playing the game 
-#   
+# Playing the game
+#
 
-from ps9pr1 import Board
-from ps9pr2 import Player
+from board import Board
+from player import Player
 import random
-    
+
 def connect_four(player1, player2):
     """ Plays a game of Connect Four between the two specified players,
         and returns the Board object as it looks at the end of the game.
@@ -26,7 +26,7 @@ def connect_four(player1, player2):
     print()
     board = Board(6, 7)
     print(board)
-    
+
     while True:
         if process_move(player1, board) == True:
             return board

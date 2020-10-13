@@ -1,10 +1,10 @@
 #
 # ps9pr2.py  (Problem Set 9, Problem 2)
 #
-# A Connect-Four Player class 
-#  
+# A Connect-Four Player class
+#
 
-from ps9pr1 import Board
+from board import Board
 
 # write your class below
 
@@ -47,7 +47,7 @@ class Player:
             the next move
         """
         self.num_moves += 1
-        
+
         while True:
             col = int(input('Enter a column: '))
             if col > (board.width - 1) or col < 0:
@@ -56,4 +56,3 @@ class Player:
                 print('Try again!')
             else:
                 return col
-        
